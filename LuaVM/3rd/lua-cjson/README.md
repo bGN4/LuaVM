@@ -1,10 +1,10 @@
-Lua CJSON is a fast JSON encoding/parsing module for Lua http://www.kyne.com.au/~mark/software/lua-cjson.php
+Lua CJSON is a fast JSON encoding/parsing module for Lua http://www.kyne.com.au/~mark/software/lua-cjson.php  
 
 This version is copy from https://github.com/mpx/lua-cjson
 
 
-= Lua CJSON 2.1devel Manual =
-Mark Pulford <mark@kyne.com.au>
+#Lua CJSON 2.1devel Manual
+Mark Pulford <mark@kyne.com.au>  
 :revdate: 1st March 2012
 
 Overview
