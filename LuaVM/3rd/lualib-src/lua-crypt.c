@@ -6,6 +6,19 @@
 #include <string.h>
 #include <stdlib.h>
 
+// cross platform for random function (copy from lua/lmathlib.c)
+#if !defined(l_rand)		/* { */
+#if defined(LUA_USE_POSIX)
+#define l_rand()	random()
+#define l_srand(x)	srandom(x)
+#define L_RANDMAX	2147483647	/* (2^31 - 1), following POSIX */
+#else
+#define l_rand()	rand()
+#define l_srand(x)	srand(x)
+#define L_RANDMAX	RAND_MAX
+#endif
+#endif				/* } */
+
 #define SMALL_CHUNK 256
 
 /* the eight DES S-boxes */
@@ -340,7 +353,7 @@ lrandomkey(lua_State *L) {
 	int i;
 	char x = 0;
 	for (i=0;i<8;i++) {
-		tmp[i] = random() & 0xff;
+		tmp[i] = l_rand() & 0xff;
 		x ^= tmp[i];
 	}
 	if (x==0) {
@@ -889,7 +902,7 @@ luaopen_crypt(lua_State *L) {
 	if (!init) {
 		// Don't need call srandom more than once.
 		init = 1 ;
-		srandom(time(NULL));
+		l_srand(time(NULL));
 	}
 	luaL_Reg l[] = {
 		{ "hashkey", lhashkey },
