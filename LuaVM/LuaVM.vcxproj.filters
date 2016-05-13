@@ -22,6 +22,9 @@
     <Filter Include="3rd\lua-md5">
       <UniqueIdentifier>{fb725eee-8656-4705-ac2d-5a5b02a26f83}</UniqueIdentifier>
     </Filter>
+    <Filter Include="3rd\lua-cjson">
+      <UniqueIdentifier>{fd050008-1f81-4141-b532-ff51a0b40cd7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.c">
@@ -42,6 +45,15 @@
     <ClCompile Include="3rd\lualib-src\lua-crypt.c">
       <Filter>3rd\lualib-src</Filter>
     </ClCompile>
+    <ClCompile Include="3rd\lua-cjson\fpconv.c">
+      <Filter>3rd\lua-cjson</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-cjson\lua_cjson.c">
+      <Filter>3rd\lua-cjson</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-cjson\strbuf.c">
+      <Filter>3rd\lua-cjson</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="3rd\lua-md5\compat-5.2.h">
@@ -49,6 +61,12 @@
     </ClInclude>
     <ClInclude Include="3rd\lua-md5\md5.h">
       <Filter>3rd\lua-md5</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-cjson\fpconv.h">
+      <Filter>3rd\lua-cjson</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-cjson\strbuf.h">
+      <Filter>3rd\lua-cjson</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
