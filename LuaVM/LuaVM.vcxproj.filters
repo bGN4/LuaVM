@@ -13,5 +13,42 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="3rd">
+      <UniqueIdentifier>{bb28c8ff-897f-4575-baee-c1a8c5a09764}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\lualib-src">
+      <UniqueIdentifier>{0110b41b-d879-4270-b457-9024b192b2ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\lua-md5">
+      <UniqueIdentifier>{fb725eee-8656-4705-ac2d-5a5b02a26f83}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lualib-src\lsha1.c">
+      <Filter>3rd\lualib-src</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-md5\compat-5.2.c">
+      <Filter>3rd\lua-md5</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-md5\md5.c">
+      <Filter>3rd\lua-md5</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-md5\md5lib.c">
+      <Filter>3rd\lua-md5</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lualib-src\lua-crypt.c">
+      <Filter>3rd\lualib-src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="3rd\lua-md5\compat-5.2.h">
+      <Filter>3rd\lua-md5</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-md5\md5.h">
+      <Filter>3rd\lua-md5</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
