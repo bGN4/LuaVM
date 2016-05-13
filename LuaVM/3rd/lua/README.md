@@ -1,1 +1,1 @@
-this directory is a soft link to lua-*.*.*
+this directory is a soft link to lua-\<version\> dir
